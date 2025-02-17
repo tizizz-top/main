@@ -10,6 +10,9 @@ WX_VERIFY=MP_verify_VmrbuqOYQnB6tzAS.txt
 all: build
 
 build:
+	# build frontend
+	# cd ui && pnpm build
+	# cd ..
 	cp -f ui/$(WX_VERIFY) ui/out/$(WX_VERIFY)
 	$(GOBUILD) -o $(BINARY_NAME) -v
 
